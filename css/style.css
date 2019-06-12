@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700&subset=chinese-traditional');
+@import url('https://fonts.googleapis.com/css?family=Spectral:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family:'Noto Sans TC', 'Microsoft JhengHei','微軟正黑體', 'Heiti TC','Segoe UI',SegoeUI, sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    -webkit-text-size-adjust: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a,
+a:hover,
+a:focus {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+a {
+    color: #FFF;
+}
+
+.container {
+    width: 85%;
+    max-width: 1990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-full {
+    width: 100%;
+    max-width: 1990px;
+    margin: 0 auto;
+    position: relative;
+}
+header{
+    position: relative;
+}
+
+footer {
+    height: auto;
+    width: 100vw;
+    background-color: #111;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+h2 {
+    color: #0C2340;
+}
+
+/*=========== scrollbar fix ==============*/
+@-ms-viewport { width: device-width; }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+}
+
+/*=========================basic===========================*/
