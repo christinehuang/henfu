@@ -46,11 +46,11 @@
             <section>
                 <article>
                     <div class="step-txt">
-                        <ul>
-                            <li>1 金額選擇</li>
-                            <li>2 資料填寫</li>
-                            <li>3 收據資訊</li>
-                            <li>4 付款完成</li>
+                        <ul id="myid">
+                            <li><label class="btn active" for="step-0">1 金額選擇</label></li>
+                            <li><label class="btn" for="step-1">2 資料填寫</label></li>
+                            <li><label class="btn" for="step-2">3 收據資訊</label></li>
+                            <li><label class="btn" for="step-3">4 付款完成</label></li>
                         </ul>
                     </div>
                     <form class="pure-steps">
@@ -151,7 +151,16 @@
                                     </header>
                                 </li>
                                 <li class="pure-steps_group-step">
-                                    <label for="step-0">回到金額選擇</label>
+                                    <div class="step-group-top">
+                                        <label class="step-top-prev" for="step-0">上一步</label>
+                                        <div class="step-top-price">
+                                            <span class="price-label">每月金額</span>
+                                            <!--如果是單筆就改"單筆金額"-->
+                                            <div class="price-amount"><span>NTD</span>
+                                                <p>300</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <fieldset>
                                         <legend class="pure-steps_group-step_legend">資料填寫</legend>
                                         <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
@@ -183,35 +192,91 @@
                                     </fieldset>
                                 </li>
                                 <li class="pure-steps_group-step">
-                                    <label for="step-0">回到金額選擇</label>
+                                    <div class="step-group-top">
+                                        <label class="step-top-prev" for="step-1">上一步</label>
+                                        <div class="step-top-price">
+                                            <span class="price-label">每月金額</span>
+                                            <!--如果是單筆就改"單筆金額"-->
+                                            <div class="price-amount"><span>NTD</span>
+                                                <p>300</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <fieldset>
                                         <legend class="pure-steps_group-step_legend">確認收據資料</legend>
-                                        <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
-                                            <input type="text" placeholder="收據抬頭" value="" id="input_email">
-                                            <label for="input_email">公司抬頭</label>
-                                        </p>
-                                        <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
-                                            <input type="text" placeholder="統編" value="" id="input_nick">
-                                            <label for="input_nick">公司統編</label>
-                                        </p>
-                                        <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
-                                            <input type="password" placeholder="Type your password here" value="" id="input_password">
-                                            <label for="input_password">Password</label>
-                                        </p>
-                                        <div class="pay-txt">
-                                            <ul class="accordion">
-                                                <li>
-                                                    <span></span><a>收款/回饋說明</a>
-                                                    <p>500以上<br>回饋：日曆一本。<br>2000以上<br>回饋：日曆一本＋熊熊娃娃。<br>線上刷卡為PayNow科技系統。資料以SSL加密保護，卡號不會留存本站，請安心使用。</p>
-                                                </li>
-                                                <li>
-                                                    <span></span><a>隱私權政策</a>
-                                                    <p>您的個人資料將絕對保密，為保障您的權益，謹依個資法第8條規定告知下列事項：
-                                                        本會蒐集個人資料之目的，在於進行專案推廣、募捐活動、調查統計與研究分析、會員管理與服務等相關事宜。
-                                                        本次蒐集、處理及利用您的個資類別，包括姓名、出生年份及財務交易資訊等，詳如上述連署與捐款資料表所載。 您的個資將於本會營運期間，以紙本、電子、口頭或其他適當方式，利用於本會各辦公室、其他與本會有業務往來或合作之機構，及前揭組織、機構之所在地區。
-                                                        您得就提供之個人資料，向本會(1)查詢或請求閱覽 (2)請求製給複製本 (3)請求補充或更正 (4)請求停止蒐集、處理或利用 (5)請求刪除。 您得自由選擇是否提供上開個人資料，惟若拒絕提供、提供之資料不實或不完全、提供後請求刪除或停止處理利用而經本會同意，本會將無法提供您支持者與捐款會員服務。</p>
-                                                </li>
-                                            </ul> <!-- / accordion -->
+                                        <span class="receipt-title">是否需要收據？</span>
+                                        <div class="pure-steps_group-step_item flexy-item receipt">
+                                            
+                                            <input class="receipt-input" type="radio" name="receipt" value="" id="no" checked="">
+                                            <input class="receipt-input" type="radio" name="receipt" value="" id="yes">
+                                            <input class="receipt-input" type="radio" name="receipt" value="" id="yes2">
+                                                <label class="label-btn" for="no">免寄</label>
+                                                <label class="label-btn2" for="yes">年寄</label>
+                                                <label class="label-btn3" for="yes2">每次寄</label>
+                                            <div class="receipt-item">
+                                                <p class="pure-steps_group-step_item flexy-item reverse agree">
+                                                    <input type="checkbox" value="" id="input_agree">
+                                                    <label for="input_agree">我已閱讀並同意<a href="#">隱私權政策</a></label>
+                                                </p>
+                                                <div class="pay-txt">
+                                                    <ul class="accordion">
+                                                        <li>
+                                                            <span></span><a>回饋/收款說明</a>
+                                                            <p>500以上<br>回饋：日曆一本。<br>2000以上<br>回饋：日曆一本＋熊熊娃娃。<br>3000以上<br>回饋：日曆一本＋熊熊娃娃＋團體T-shirt。<br>
+                                                                <img src="images/cover.jpg" alt="">
+                                                                線上刷卡為PayNow科技系統。資料以SSL加密保護，卡號不會留存本站，請安心使用。</p>
+                                                        </li>
+                                                    </ul> <!-- / accordion -->
+                                                </div>
+                                            </div>
+                                            <div class="receipt-item2">
+                                                <p class="pure-steps_group-step_item flexy-item reverse agree">
+                                                    <input type="checkbox" value="" id="input_agree">
+                                                    <label for="input_agree">我已閱讀並同意<a href="#">隱私權政策</a></label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="收據抬頭" value="" id="input_email">
+                                                    <label for="input_email">姓名/公司抬頭</label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="身分證/統編" value="" id="input_nick">
+                                                    <label for="input_nick">身分證/公司統編</label>
+                                                </p>
+                                                <div class="pay-txt">
+                                                    <ul class="accordion">
+                                                        <li>
+                                                            <span></span><a>回饋/收款說明</a>
+                                                            <p>500以上<br>回饋：日曆一本。<br>2000以上<br>回饋：日曆一本＋熊熊娃娃。<br>3000以上<br>回饋：日曆一本＋熊熊娃娃＋團體T-shirt。<br>
+                                                                <img src="images/cover.jpg" alt="">
+                                                                線上刷卡為PayNow科技系統。資料以SSL加密保護，卡號不會留存本站，請安心使用。</p>
+                                                        </li>
+                                                    </ul> <!-- / accordion -->
+                                                </div>
+                                            </div>
+                                            <div class="receipt-item3">
+                                                <p class="pure-steps_group-step_item flexy-item reverse agree">
+                                                    <input type="checkbox" value="" id="input_agree">
+                                                    <label for="input_agree">我已閱讀並同意<a href="#">隱私權政策</a></label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="收據抬頭" value="" id="input_email">
+                                                    <label for="input_email">姓名/公司抬頭</label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="身分證/統編" value="" id="input_nick">
+                                                    <label for="input_nick">身分證/公司統編</label>
+                                                </p>
+                                                <div class="pay-txt">
+                                                    <ul class="accordion">
+                                                        <li>
+                                                            <span></span><a>收款/回饋說明</a>
+                                                            <p>500以上<br>回饋：日曆一本。<br>2000以上<br>回饋：日曆一本＋熊熊娃娃。<br>3000以上<br>回饋：日曆一本＋熊熊娃娃＋團體T-shirt。<br>
+                                                                <img src="images/cover.jpg" alt="">
+                                                                線上刷卡為PayNow科技系統。資料以SSL加密保護，卡號不會留存本站，請安心使用。</p>
+                                                        </li>
+                                                    </ul> <!-- / accordion -->
+                                                </div>
+                                            </div>
                                         </div>
                                     </fieldset>
                                 </li>
@@ -222,25 +287,24 @@
                                         </svg>
                                     </div>
                                 </li>
-                            </ol>  
-                           <div class="trigger-all">
+                            </ol>
+                            <div class="trigger-all">
                                 <ol class="pure-steps_group-triggers">
-                                   <li class="pure-steps_group-triggers_item">
-                                       <label for="step-0">Restart</label>
-                                   </li>
-                                   <li class="pure-steps_group-triggers_item">
-                                       <label for="step-1">下一步</label>
-                                   </li>
-                                   <li class="pure-steps_group-triggers_item">
-                                       <label for="step-2">確認資料</label>
-                                   </li>
-                                   <li class="pure-steps_group-triggers_item">
-                                       <label for="step-3">付款</label>
-                                   </li>
-                               </ol>
-                           </div>
+                                    <li class="pure-steps_group-triggers_item">
+                                        <label for="step-0">Restart</label>
+                                    </li>
+                                    <li class="pure-steps_group-triggers_item">
+                                        <label for="step-1">下一步</label>
+                                    </li>
+                                    <li class="pure-steps_group-triggers_item">
+                                        <label for="step-2">確認資料</label>
+                                    </li>
+                                    <li class="pure-steps_group-triggers_item">
+                                        <label for="step-3">付款</label>
+                                    </li>
+                                </ol>
+                            </div>
                         </div>
-                    
                     </form>
                 </article>
             </section>
@@ -284,6 +348,18 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.3&appId=427052087653286&autoLogAppEvents=1"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="js/accordion.js"></script>
+    <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myid");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+    </script>
 </body>
 
 </html>
