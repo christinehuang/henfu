@@ -2315,7 +2315,7 @@ footer {
     display: -ms-flex;
     display: flex;
     flex-direction: column;
-    height: 158vh;
+    height: 168vh;
 }
     .step-txt li {
         font-size: 15px;
