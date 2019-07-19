@@ -1,5 +1,6 @@
  (function($) {
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+    $('.accordion > li:eq(3) a').addClass('active').next().slideDown();
 
     $('.accordion a').click(function(j) {
         var dropDown = $(this).closest('li').find('p');
