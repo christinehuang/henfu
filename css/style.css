@@ -870,6 +870,7 @@ article header {
     line-height: 28px;
     cursor: pointer;
     border-radius: 8px;
+    border-top-right-radius: 0px; 
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
@@ -893,6 +894,7 @@ article header {
     width: 60%;
     padding: 2% 5%;
     border-radius: 8px;
+    border-top-left-radius: 0px; 
     background-color: #ffa84c;
     box-shadow: 0 1.7em 5.5em -0.94em rgba(255, 168, 76, 0.5), 0 2em 3em 0.5em rgba(255, 168, 76, 0.2), 0 1.8em 2em -1.5em rgba(255, 168, 76, 0.3);
 }
