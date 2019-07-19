@@ -55,6 +55,25 @@ $(document).ready(function(){
   .addTo(controller);
   });
 
+ $('.share').each(function(){
+
+    //build a scene
+  var ourScene17 = new ScrollMagic.Scene({
+      triggerElement: this,
+      triggerHook: 0.5,
+      reverse: true
+  })
+  .setClassToggle(this, 'fade-in') //add class to section1-pic
+  .addTo(controller);
+  });
+  
+  var parallaxScene = new ScrollMagic.Scene({
+       triggerElement:'body',
+       triggerHook:1,
+       duration:'180%'
+   })
+   .setTween(TweenMax.from('.share', 1, {y: '185%', ease:Power0.easeNone}))
+   .addTo(controller);
 
 
 });

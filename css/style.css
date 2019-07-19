@@ -170,7 +170,7 @@ body {
     -moz-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
-    transition-delay: 0.8s;
+    transition-delay: 0.4s;
 }
 .right.fade-in{
     opacity: 1;
@@ -1861,11 +1861,19 @@ footer {
     border-radius: 15px;
     min-height: 60px;
     height: auto;
+    opacity: 0;
+    transform: translate(0px, 50px);
+     -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
     z-index: 5;
     box-shadow: 0 1.7em 5.5em -0.94em rgba(255, 168, 76, 0.5), 0 2em 3em 0.5em rgba(255, 168, 76, 0.2), 0 1.8em 2em -1.5em rgba(255, 168, 76, 0.3);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa84c', endColorstr='#ff7b0d', GradientType=1);
 }
-
+.share.fade-in{
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
 .share li {
     position: relative;
     margin-bottom: 10px;
@@ -1929,6 +1937,17 @@ footer {
 }
 
 @media screen and (max-width: 2570px) {
+    .left{
+    width: 50%;
+    padding-top: 10%;
+    padding-right: 0%;
+    padding-bottom: 8%;
+    padding-left: 15%;
+    }
+    .right{
+     width: 50%;
+    padding-left: 5%;
+    }
     .pure-steps {
         display: inline-block;
         width: 26vw;
@@ -1937,6 +1956,7 @@ footer {
 }
 
 @media screen and (max-width: 1940px) {
+
     .pure-steps {
         display: inline-block;
         width: 30vw;
@@ -1947,6 +1967,10 @@ footer {
 @media screen and (max-width: 1450px) {
     .left {
         padding-left: 0;
+        width: 40%;
+    padding-top: 10%;
+    padding-right: 3%;
+    padding-bottom: 8%;
     }
 
     .left h2 {
@@ -1956,7 +1980,10 @@ footer {
         font-weight: 600;
         line-height: 90px;
     }
-
+    .right{
+        width: 60%;
+    padding-left: 11%;
+    }
     .pure-steps .pure-steps_group {
         position: relative;
         height: 92vh;
@@ -2281,6 +2308,13 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    .container-full {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    height: 158vh;
+}
     .step-txt li {
         font-size: 15px;
     }
