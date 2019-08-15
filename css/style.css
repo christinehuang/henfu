@@ -1179,6 +1179,79 @@ article header {
     transform: translate(0);
 }
 
+/*===========finish============*/
+.pure-steps .pure-steps_radio:nth-child(4):checked~.pure-steps_group {
+    background-position: 75% 0;
+}
+
+.pure-steps .pure-steps_group .pure-steps_group-triggers {
+    opacity: 0;
+    transition-delay: 0.6s;
+}
+
+.pure-steps .pure-steps_group .pure-steps_group-step.thank{
+    align-items: center;
+    height: 100%;
+}
+
+.pure-steps .pure-steps_group .thank .pure-steps_preload {
+    position: absolute;
+    top: 15%;
+    left: -32px;
+    display: block;
+    height: .15em;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 2em;
+    background-image: linear-gradient(0deg, rgba(0, 230, 218, 0.4) 0%, rgba(0, 161, 154, 0.4) 50%, rgba(255, 157, 0, 0.4) 100%);
+    background-size: 0 10em;
+    background-position: top center;
+    background-repeat: no-repeat;
+    will-change: background-image;
+    transition: background-image 1s linear;
+    -webkit-animation: preloadLine 1s ease-out forwards;
+    animation: preloadLine 1s ease-out forwards;
+}
+
+.pure-steps .pure-steps_group .thank .pure-steps_preload svg {
+    font-size: 1.2em;
+    width: auto;
+    height: 1em;
+    padding: 1em;
+    border-radius: 2em;
+    background-color: #F90;
+    -webkit-box-shadow: 0px 0px 43px -8px rgba(255, 173, 51, 0.36);
+    -moz-box-shadow: 0px 0px 43px -8px rgba(255, 173, 51, 0.36);
+    box-shadow: 0px 0px 43px -8px rgba(255, 173, 51, 0.36);
+    fill: white;
+    margin-top: -1.5em;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-animation: preloadTic .8s linear forwards;
+    animation: preloadTic .8s linear forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.pure-steps .pure-steps_group .pure-steps_group-triggers:before {
+    width: 99.999%;
+}
+
+.pure-steps .pure-steps_group .pure-steps_group-triggers .pure-steps_group-triggers_item:nth-child(5) {
+    display: block;
+}
+
+.pure-steps .pure-steps_group .thank {
+    display: block;
+    opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+}
+.pure-steps .pure-steps_group .thank .finish {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition-delay: 1s;
+}
 svg,
 path {
     box-sizing: content-box;
