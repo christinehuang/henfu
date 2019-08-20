@@ -597,6 +597,7 @@ article header {
 .pure-steps_group-step .agree label {
     font-size: 15px !important;
     line-height: 32px;
+    margin-right: 10px;
 }
 
 .pure-steps_group-step .agree a {
@@ -1184,10 +1185,7 @@ article header {
     background-position: 75% 0;
 }
 
-.pure-steps .pure-steps_group .pure-steps_group-triggers {
-    opacity: 0;
-    transition-delay: 0.6s;
-}
+
 
 .pure-steps .pure-steps_group .pure-steps_group-step.thank{
     align-items: center;
@@ -1662,7 +1660,7 @@ main {
 
 .finish a:hover img {
     cursor: pointer;
-    transform: scale(1);
+    transform: scale(0.9);
     box-shadow: 0 1.7em 5.5em -0.94em rgba(255, 168, 76, 0.5), 0 2em 3em 0.5em rgba(255, 168, 76, 0.2), 0 1.8em 2em -1.5em rgba(255, 168, 76, 0.3);
 }
 
@@ -1700,9 +1698,9 @@ main {
     width: 90%;
     border-radius: 50%;
     transform: scale(0.8);
-    -webkit-transition: all 0.6s ease-in-out;
-    -moz-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 /*=========finish========*/
@@ -2377,7 +2375,7 @@ footer {
      }
      .finish {
     position: relative;
-    padding-top: 27%;
+    padding-top: 35%;
     }
     .finish p {
     line-height: 22px;
@@ -2390,7 +2388,7 @@ footer {
     display: -ms-flex;
     display: flex;
     flex-direction: column;
-    height: 168vh;
+    height: 177vh;
 }
     .step-txt li {
         font-size: 15px;
@@ -2434,6 +2432,10 @@ footer {
     .pure-steps .pure-steps_group .pure-steps_group-step .pure-steps_group-step_item {
         padding: 0 .8em .8em;
     }
+    .finish {
+    position: relative;
+    padding-top: 38%;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -2454,4 +2456,15 @@ footer {
         font-size: 15px;
         margin: 0 -2px -1px 0px;
     }
+     .finish {
+    position: relative;
+    padding-top: 38%;
+    }
+    .container-full {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    height: 196vh;
+}
 }
