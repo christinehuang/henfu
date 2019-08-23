@@ -795,6 +795,9 @@ article header {
     display: block;
     opacity: 1;
 }
+.pure-steps .pure-steps_group .pure-steps_group-step .pure-steps_group-step_item label:first-child {
+    color: #e83a2e;
+}
 #input_address2{
     margin-top: 5px;
 }
@@ -820,7 +823,9 @@ article header {
     -moz-box-shadow: 0px 0px 43px -8px rgba(0, 161, 154, 0.36);
     box-shadow: 0px 0px 43px -8px rgba(0, 161, 154, 0.36);
 }
-
+.input-alert{
+    border-bottom: 2px solid #e83a2e!important;
+}
 .pure-steps .pure-steps_group .pure-steps_group-step .pure-steps_group-step_item input:focus {
     color: #666;
     background-size: 0% 1px, 100% 1px;
