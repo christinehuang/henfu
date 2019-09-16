@@ -108,6 +108,30 @@ h2 {
     color: #0C2340;
 }
 
+.cannot{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 6;
+}
+.cannot-icon{
+      padding-top: 20vh;
+    width: 100%;
+    max-width: 120px;
+    margin: 0 auto;
+}
+.cannot h3{
+    line-height: 45px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+    color: #FFF;
+    font-size: 40px;
+}
+.cannot p{
+    padding-top: 50vh;
+    color: #FFF;
+}
 /*=========== scrollbar fix ==============*/
 @-ms-viewport {
     width: device-width;
