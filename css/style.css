@@ -126,7 +126,7 @@ h2 {
     padding-bottom: 30px;
     letter-spacing: 2px;
     color: #FFF;
-    font-size: 40px;
+    font-size: 36px;
 }
 .cannot p{
     padding-top: 50vh;
@@ -2408,6 +2408,14 @@ footer {
     }
     .finish p {
     line-height: 22px;
+   }
+   .cannot h3{
+    line-height: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+    color: #FFF;
+    font-size: 28px;
    }
 }
 
