@@ -1896,7 +1896,15 @@ footer {
     padding: 10px 25px 30px;
     color: #181515;
 }
-
+.accordion li .acc-content{
+    display: none;
+    padding: 10px 25px 30px;
+    color: #181515;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
 .accordion a {
     width: 100%;
     display: block;
