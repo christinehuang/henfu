@@ -64,7 +64,7 @@ $(document).ready(function(){
   .addTo(controller);
   });
 
- $('.share').each(function(){
+ $('.right-bar').each(function(){
 
     //build a scene
   var ourScene17 = new ScrollMagic.Scene({
@@ -81,7 +81,7 @@ $(document).ready(function(){
        triggerHook:1,
        duration:'180%'
    })
-   .setTween(TweenMax.from('.share', 1, {y: '185%', ease:Power0.easeNone}))
+   .setTween(TweenMax.from('.right-bar', 1, {y: '120%', ease:Power0.easeNone}))
    .addTo(controller);
 
 });

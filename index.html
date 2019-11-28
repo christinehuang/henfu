@@ -9,9 +9,7 @@
 </head>
 
 <body>
-
-   
-    <div class="container-full" style="background-image: url(images/cover2.jpg);">
+    <div class="container-full" style="background-image: url(images/house.jpg);">
         <!--專案背景圖若沒有上傳，就按照預設底色-->
         <div class="left">
             <h1>PG基金會 <img src="images/logo-w.png" alt="PG基金會"></h1>
@@ -164,31 +162,12 @@
                                             <label for="input_agree">定期24期</label>
                                         </p>
                                         <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
-                                            <label for="input_email">此欄位為必填欄位</label>
-                                            <input class="input-alert" type="text" placeholder="Email" value="" id="input_email">
-                                            <label for="input_email">電子郵件Email</label>
-                                        </p>
-                                        <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
                                             <input type="text" placeholder="姓名" value="" id="input_name">
                                             <label for="input_name">姓名</label>
                                         </p>
                                         <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
                                             <input type="text" placeholder="手機" value="" id="input_phone">
                                             <label for="input_phone">手機</label>
-                                        </p>
-                                        <div class="pure-steps_group-step_item flexy-item flexy-column reverse">
-                                            <div class="city form-select">
-                                                <select name="" id="">
-                                                    <option value="" disabled="disabled" selected="selected">選擇縣市</option>
-                                                    <option>高雄市</option>
-                                                    <option>台北市</option>
-                                                    <option>新北市</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
-                                            <input type="text" placeholder="地址" value="" id="input_address">
-                                            <label for="input_address">地區街道地址</label>
                                         </p>
                                     </fieldset>
                                 </li>
@@ -214,9 +193,26 @@
                                             <label class="label-btn2" for="yes">年寄</label>
                                             <label class="label-btn3" for="yes2">每次寄</label>
                                             <div class="receipt-item">
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <label for="input_email">此欄位為必填欄位</label>
+                                                    <input class="input-alert" type="text" placeholder="Email寄送付款確認" value="" id="input_email">
+                                                    <label for="input_email">電子郵件Email</label>
+                                                </p>
                                                 <p class="pure-steps_group-step_item flexy-item reverse agree">
                                                     <input type="checkbox" value="" id="input_agree">
                                                     <label for="input_agree">我已閱讀並同意<a href="#policy">隱私權政策</a></label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item reverse agree">
+                                                    <input type="checkbox" value="" id="input_agree">
+                                                    <label for="input_agree">加入會員</a></label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="手機" value="" id="input_phone">
+                                                    <label for="input_phone">輸入密碼</label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="手機" value="" id="input_phone">
+                                                    <label for="input_phone">再次輸入密碼</label>
                                                 </p>
                                                 <div class="pay-txt">
                                                     <ul class="accordion">
@@ -231,10 +227,6 @@
                                                 </div>
                                             </div>
                                             <div class="receipt-item2">
-                                                <p class="pure-steps_group-step_item flexy-item reverse agree">
-                                                    <input type="checkbox" value="" id="input_agree">
-                                                    <label for="input_agree">我已閱讀並同意<a href="#policy">隱私權政策</a></label>
-                                                </p>
                                                 <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
                                                     <input type="text" placeholder="收據抬頭" value="" id="input_name">
                                                     <label for="input_name">姓名/公司抬頭</label>
@@ -243,11 +235,46 @@
                                                     <input type="text" placeholder="身分證/統編" value="" id="input_id">
                                                     <label for="input_id">身分證/公司統編</label>
                                                 </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <label for="input_email">此欄位為必填欄位</label>
+                                                    <input class="input-alert" type="text" placeholder="Email寄送付款確認" value="" id="input_email">
+                                                    <label for="input_email">電子郵件Email</label>
+                                                </p>
+                                                <div class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <div class="city form-select">
+                                                        <select name="" id="">
+                                                            <option value="" disabled="disabled" selected="selected">選擇縣市</option>
+                                                            <option>高雄市</option>
+                                                            <option>台北市</option>
+                                                            <option>新北市</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="地址" value="" id="input_address">
+                                                    <label for="input_address">地區街道地址</label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item reverse agree">
+                                                    <input type="checkbox" value="" id="input_agree">
+                                                    <label for="input_agree">我已閱讀並同意<a href="#policy">隱私權政策</a></label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item reverse agree">
+                                                    <input type="checkbox" value="" id="input_agree">
+                                                    <label for="input_agree">加入會員</a></label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="手機" value="" id="input_phone">
+                                                    <label for="input_phone">輸入密碼</label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="手機" value="" id="input_phone">
+                                                    <label for="input_phone">再次輸入密碼</label>
+                                                </p>
                                                 <div class="pay-txt">
                                                     <ul class="accordion">
                                                         <li>
                                                             <span></span><a>回饋/收款說明</a>
-                                                             <div class="acc-content">500以上<br>回饋：日曆一本。<br>2000以上<br>回饋：日曆一本＋熊熊娃娃。<br>3000以上<br>回饋：日曆一本＋熊熊娃娃＋團體T-shirt。<br>
+                                                            <div class="acc-content">500以上<br>回饋：日曆一本。<br>2000以上<br>回饋：日曆一本＋熊熊娃娃。<br>3000以上<br>回饋：日曆一本＋熊熊娃娃＋團體T-shirt。<br>
                                                                 <img src="images/cover.jpg" alt="">
                                                                 線上刷卡為PayNow科技系統。資料以SSL加密保護，卡號不會留存本站，請安心使用。</div>
                                                         </li>
@@ -255,10 +282,6 @@
                                                 </div>
                                             </div>
                                             <div class="receipt-item3">
-                                                <p class="pure-steps_group-step_item flexy-item reverse agree">
-                                                    <input type="checkbox" value="" id="input_agree">
-                                                    <label for="input_agree">我已閱讀並同意<a href="#policy">隱私權政策</a></label>
-                                                </p>
                                                 <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
                                                     <input type="text" placeholder="收據抬頭" value="" id="input_email">
                                                     <label for="input_email">姓名/公司抬頭</label>
@@ -267,11 +290,46 @@
                                                     <input type="text" placeholder="身分證/統編" value="" id="input_nick">
                                                     <label for="input_nick">身分證/公司統編</label>
                                                 </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <label for="input_email">此欄位為必填欄位</label>
+                                                    <input class="input-alert" type="text" placeholder="Email寄送付款確認" value="" id="input_email">
+                                                    <label for="input_email">電子郵件Email</label>
+                                                </p>
+                                                <div class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <div class="city form-select">
+                                                        <select name="" id="">
+                                                            <option value="" disabled="disabled" selected="selected">選擇縣市</option>
+                                                            <option>高雄市</option>
+                                                            <option>台北市</option>
+                                                            <option>新北市</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="地址" value="" id="input_address">
+                                                    <label for="input_address">地區街道地址</label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item reverse agree">
+                                                    <input type="checkbox" value="" id="input_agree">
+                                                    <label for="input_agree">我已閱讀並同意<a href="#policy">隱私權政策</a></label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item reverse agree">
+                                                    <input type="checkbox" value="" id="input_agree">
+                                                    <label for="input_agree">加入會員</a></label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="手機" value="" id="input_phone">
+                                                    <label for="input_phone">輸入密碼</label>
+                                                </p>
+                                                <p class="pure-steps_group-step_item flexy-item flexy-column reverse">
+                                                    <input type="text" placeholder="手機" value="" id="input_phone">
+                                                    <label for="input_phone">再次輸入密碼</label>
+                                                </p>
                                                 <div class="pay-txt">
                                                     <ul class="accordion">
                                                         <li>
                                                             <span></span><a>回饋/收款說明</a>
-                                                             <div class="acc-content">500以上<br>回饋：日曆一本。<br>2000以上<br>回饋：日曆一本＋熊熊娃娃。<br>3000以上<br>回饋：日曆一本＋熊熊娃娃＋團體T-shirt。<br>
+                                                            <div class="acc-content">500以上<br>回饋：日曆一本。<br>2000以上<br>回饋：日曆一本＋熊熊娃娃。<br>3000以上<br>回饋：日曆一本＋熊熊娃娃＋團體T-shirt。<br>
                                                                 <img src="images/cover.jpg" alt="">
                                                                 線上刷卡為PayNow科技系統。資料以SSL加密保護，卡號不會留存本站，請安心使用。</div>
                                                         </li>
@@ -303,9 +361,9 @@
                                             </ul>
                                         </div>
                                         <div class="finish-share-txt">
-                                                <p>您可拍照保留這此頁面</p>
-                                                <p>或按下分享散播您的喜悅唷！</p>
-                                            </div>
+                                            <p>您可拍照保留這此頁面</p>
+                                            <p>或按下分享散播您的喜悅唷！</p>
+                                        </div>
                                     </div>
                                 </li>
                             </ol>
@@ -331,26 +389,36 @@
             </section>
         </div>
         <div class="overlay"></div>
-        <div class="share">
-        <ul>
-            <li>
-                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-            </li>
-            <li><a href="#"><img src="images/line-circle.svg" alt=""><img src="images/line-color-circle.svg" alt=""></a></li>
-        </ul>
+        <div class="right-bar">
+            <div class="account-button">
+                <ul>
+                    <li><a href="index.html"><img src="images/home.png" alt=""></a></li>
+                    <li><a href="login.html"><img src="images/user.png" alt=""></a></li>
+                    <li><a href="register.html"><img src="images/register.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="share">
+                <ul>
+                    <li>
+                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                    </li>
+                    <li><a href="#"><img src="images/line-circle.svg" alt=""><img src="images/line-color-circle.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    </div>
-
     <footer>
         <div class="foot-top">
-            <div class="foot-top-middle"><!-- 該分會聯絡資料 -->
+            <div class="foot-top-middle">
+                <!-- 該分會聯絡資料 -->
                 <p>丕績尼尼有限公司
                     PGnini Co.,Ltd.</p>
                 <p>80048高雄市新興區民族二路13號4F-1</p>
                 <p> <a href="tel:072226422">TEL:072226422</a><br>
                     FAX:072223814<br>
                     <a href="mailto:pgninico@gmail.com">E-mial : pgninico@gmail.com</a></p>
-                <div class="foot-top-office-social"><!-- 該分會官方FB/IG -->
+                <div class="foot-top-office-social">
+                    <!-- 該分會官方FB/IG -->
                     <a href="#"><img src="images/facebook-logo-button.png" alt=""></a>
                     <a href="#"><img src="images/instagram-logo.png" alt=""></a>
                 </div>
@@ -359,12 +427,13 @@
                 <ul class="accordion">
                     <li>
                         <span></span><a>專案說明</a>
-                         <div class="acc-content">綠色和平致力於為地球發聲，我們的存在是因為脆弱的地球需要改變、需要行動。但保護地球的使命不能僅靠綠色和平來完成，「你」就是改變世界的力量！<br>
-                            若需停止定期定額捐款，請來email信告知，或參閱我們的聯絡資料，我們將助您進行程序</div>
+                        <div class="acc-content">綠色和平致力於為地球發聲，我們的存在是因為脆弱的地球需要改變、需要行動。但保護地球的使命不能僅靠綠色和平來完成，「你」就是改變世界的力量！<br>
+                            若需停止定期定額捐款，請來email信告知，或參閱我們的聯絡資料，我們將助您進行程序。<br>
+                        </div>
                     </li>
                     <li id="policy">
                         <span></span><a>隱私權政策</a>
-                         <div class="acc-content">您的個人資料將絕對保密，為保障您的權益，謹依個資法第8條規定告知下列事項：
+                        <div class="acc-content">您的個人資料將絕對保密，為保障您的權益，謹依個資法第8條規定告知下列事項：
                             本會蒐集個人資料之目的，在於進行專案推廣、募捐活動、調查統計與研究分析、會員管理與服務等相關事宜。
                             本次蒐集、處理及利用您的個資類別，包括姓名、出生年份及財務交易資訊等，詳如上述連署與捐款資料表所載。 您的個資將於本會營運期間，以紙本、電子、口頭或其他適當方式，利用於本會各辦公室、其他與本會有業務往來或合作之機構，及前揭組織、機構之所在地區。
                             您得就提供之個人資料，向本會(1)查詢或請求閱覽 (2)請求製給複製本 (3)請求補充或更正 (4)請求停止蒐集、處理或利用 (5)請求刪除。 您得自由選擇是否提供上開個人資料，惟若拒絕提供、提供之資料不實或不完全、提供後請求刪除或停止處理利用而經本會同意，本會將無法提供您支持者與捐款會員服務。</div>
@@ -380,18 +449,15 @@
         </div>
     </footer>
     <div id="fb-root"></div>
-
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.3&appId=427052087653286&autoLogAppEvents=1"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="js/accordion.js"></script>
     <script src="js/smoothscroll.js"></script>
-
     <script src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-
     <script>
     // Add active class to the current button (highlight it)
     var header = document.getElementById("myid");
