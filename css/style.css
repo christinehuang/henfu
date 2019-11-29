@@ -253,6 +253,57 @@ body {
     padding-top: 10px;
 }
 
+.left h4 {
+    font-size: 35px;
+    color: #FFF;
+    letter-spacing: 3px;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-left: 64px;
+    line-height:46px;
+}
+.left h4::before {
+    content: '';
+    position: absolute;
+    background-color: #FFC300;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    left: 3px;
+}
+.login-icon::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background-image: url(../images/user.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    left: 3px;
+}
+.register-icon::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background-image: url(../images/register.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+    left: 3px;
+}
+.account-icon::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background-image: url(../images/account.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+    left: 3px;
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -697,6 +748,8 @@ article header {
     color: #16162f;
 }
 
+
+
 .pure-steps_group-step .receipt {
     position: relative;
     display: -webkit-flex;
@@ -866,9 +919,11 @@ article header {
 }
 
 .pure-steps .pure-steps_group .pure-steps_group-step:last-child {
-    text-align: left;
+    text-align: center;
 }
-
+.pure-steps .pure-steps_group .login-label{
+    text-align: left!important;
+}
 .pure-steps .pure-steps_group .pure-steps_group-step .pure-steps_group-step_legend {
     color: #16162f;
     letter-spacing: 2px;
@@ -920,6 +975,8 @@ article header {
     box-shadow: 0px 0px 43px -8px rgba(253, 211, 41, 0.36);
 }
 
+
+
 .input-alert {
     border-bottom: 2px solid #e83a2e !important;
 }
@@ -957,6 +1014,195 @@ article header {
     display: none;
     margin-right: 90px;
 }
+
+/*===account===*/
+.account-list ul{
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.12);
+    padding: 12px 28px;
+    border-radius: 6px;
+    opacity: 0;
+    transform: translate(0px, 50px);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+#tab2:checked~#content2 .account-list ul:nth-child(1) {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+#tab2:checked~#content2 .account-list ul:nth-child(2) {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition-delay: .2s;
+}
+#tab2:checked~#content2 .account-list ul:nth-child(3) {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition-delay: .4s;
+}
+#tab2:checked~#content2 .account-list ul:nth-child(4) {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition-delay: .6s;
+}
+#tab2:checked~#content2 .account-list ul:nth-child(5) {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition-delay: .8s;
+}
+.account-list li:first-child{
+    position: absolute;
+    left: 12px;
+    top:40%;
+    color: #20a1e4;
+    font-size: 14px;
+}
+.account-list li{
+    display: inline-block;
+    color: #666;
+    font-size: 15px;
+    line-height: 23px;
+    padding-right: 12px;
+}
+.account-list li span{
+     color: #16162f;
+     padding-right: 12px;
+}
+.account-page ul{
+    display: -webkit-flex;
+    /* Safari */
+    display: -ms-flex;
+    /* IE10 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.account-page li{
+    font-size: 13px!important;
+    color: #16162f!important;
+   width: 38px;
+   height: 38px;
+   line-height: 38px!important;
+   padding: 0;
+   text-align: center;
+   position: relative!important;
+   background-color: #FFC300;
+   left: 0!important;
+   top: 0!important;
+   border-radius: 50%;
+   margin-left: 4px;
+   margin-right: 4px;
+   -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.account-page .active, .account-page li:hover{
+   background-color: #16162f; 
+   color: #FFC300!important; 
+}
+.account-file{
+    text-align: left;
+}
+.pure-steps .pure-steps_group .pure-steps_group-step .account-file .pure-steps_group-step_item {
+    padding: 0 0em 0em;
+}
+.account-file .button-bottom-link {
+    padding: 0em 0em;
+}
+.account-file .login-button {
+    padding: 0em 0em;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.pure-steps .pure-steps_group .pure-steps_group-step .account-file .pure-steps_group-step_item label {
+    font-size: .8em;
+    display: block;
+    opacity: 1;
+    width: auto;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin:0px;
+    padding: 0px;
+    font-weight: 400;
+    text-align: left;
+    color: #999;
+    border: none;
+    background-color:transparent;
+}
+
+.pure-steps .pure-steps_group .pure-steps_group-step .account-file .pure-steps_group-step_item label:first-child {
+    color: #e83a2e;
+}
+
+#input_address2 {
+    margin-top: 5px;
+}
+
+.pure-steps .pure-steps_group .pure-steps_group-step .account-file .pure-steps_group-step_item input {
+    display: inline-block;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%!important;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border: 0px solid #FFF;
+    border-radius: 5px;
+    line-height: 2.6em;
+    padding: 5px 15px;
+    background-color: #FFF;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #FFF 0px), linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #FFC300 0px);
+    background-size: 100% 2px, 0% 2px;
+    background-repeat: no-repeat;
+    outline: none;
+    will-change: background;
+    transition: background 0.3s ease-in-out;
+    color: #666;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    -webkit-box-shadow: 0px 0px 43px -8px rgba(253, 211, 41, 0.36);
+    -moz-box-shadow: 0px 0px 43px -8px rgba(253, 211, 41, 0.36);
+    box-shadow: 0px 0px 43px -8px rgba(253, 211, 41, 0.36);
+}
+.pure-steps .pure-steps_group .pure-steps_group-step .account-file .pure-steps_group-step_item input:focus {
+    color: #666;
+    background-size: 0% 1px, 100% 1px;
+}
+
+.pure-steps .pure-steps_group .pure-steps_group-step .account-file .pure-steps_group-step_item input:focus+label {
+    opacity: 1;
+    color: #44566E;
+}
+
+.pure-steps .pure-steps_group .pure-steps_group-step .account-file .pure-steps_group-step_item input::-webkit-input-placeholder {
+    color: #e6e6e6;
+    opacity: 1;
+}
+
+.pure-steps .pure-steps_group .pure-steps_group-step .account-file .pure-steps_group-step_item input:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.pure-steps .pure-steps_group .pure-steps_group-step .account-file .pure-steps_group-step_item input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.pure-steps .pure-steps_group .pure-steps_group-step .account-file .pure-steps_group-step_item input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*====account===*/
 
 .step-group-top {
     display: -webkit-flex;
@@ -2249,10 +2495,10 @@ footer {
     }
 
     .left h2 {
-        font-size: 67px;
+        font-size: 65px;
         color: #FFF;
         letter-spacing: 3px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 90px;
     }
 
@@ -2274,7 +2520,61 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+    .left h4 {
+    font-size: 25px;
+    color: #FFF;
+    letter-spacing: 3px;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-left: 64px;
+    line-height: 36px;
+}
+.left h4::before {
+    content: '';
+    position: absolute;
+    background-color: #FFC300;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    left: 3px;
+}
+.account-icon::before {
+    background-size: 22px;
+}
+.register-icon::before {
+     background-size: 25px;
+}
+.login-icon::before{
+     background-size: 24px;
+}
+    .account-list li{
+    display: inline-block;
+    color: #666;
+    font-size: 13px;
+    line-height: 18px;
+    padding-right: 12px;
+}
+ .account-list li span{
+     color: #16162f;
+     padding-right: 8px;
+}
+.account-page li{
+    padding: 0px;
+}
 
+.login-button{
+    margin-top: 5px!important;
+    margin-bottom: 5px!important;
+}
+.login-button a {
+    font-size: 14px!important;
+}
+.account-file .button-bottom-link p{
+    font-size: 14px!important;
+}
     .container-full {
         display: -webkit-flex;
         display: -ms-flex;
