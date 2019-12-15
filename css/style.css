@@ -922,6 +922,8 @@ article header {
     text-align: center;
 }
 .pure-steps .pure-steps_group .login-label{
+    left: -100%;
+    opacity: 1;
     text-align: left!important;
 }
 .pure-steps .pure-steps_group .pure-steps_group-step .pure-steps_group-step_legend {
@@ -2013,6 +2015,7 @@ main {
 }
 
 .finish img {
+    width: 108px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 35px -18px rgba(0, 161, 154, 0.5);
     -moz-box-shadow: 0px 0px 35px -18px rgba(0, 161, 154, 0.5);
@@ -2035,18 +2038,17 @@ main {
     display: -ms-flex;
     /* IE10 */
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    bottom: 5%;
     width: 100%;
     padding: 3% 20%;
     z-index: 9999;
 }
 
 .finish .finish-share-txt {
-    padding-top: 55px;
+    padding-top: 25px;
 }
 
 .finish .finish-share-txt p {
