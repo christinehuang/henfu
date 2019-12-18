@@ -149,6 +149,97 @@ body {
     -ms-overflow-style: none;
 }
 
+
+/*=========== alert ==============*/
+.alert-area{
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    z-index: 9999;
+}
+.alert-icon{
+    position: absolute;
+    display: inline-block;
+    left: 20px;
+  top: 15px;
+}
+.alert-icon img{
+    width: 25px;
+    padding-top: 5px;
+    height: auto;
+}
+.card {
+    position: relative;
+    overflow: hidden;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-clip: padding-box;
+}
+.green {
+    background-color: #4CB113!important;
+}
+.green.lighten-5 {
+    background-color: #4CB113 !important;
+}
+.orange {
+    background-color: #FFC300 !important;
+}
+.orange.lighten-5 {
+    background-color:  #FFC300 !important;
+}
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, ul.side-nav.full, ul.side-nav.fixed {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.card .card-content {
+    padding: 20px;
+    padding-right: 140px;
+    padding-left: 60px;
+    -webkit-border-radius: 0 0 2px 2px;
+    -moz-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card .card-content p{
+    display: inline-block;
+}
+.green-text {
+    color: #FFF !important;
+}
+.orange-text {
+    color: #FFF !important;
+}
+.card-alert button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 30px;
+  right: 10px;
+  top: 15px;
+  color: inherit;
+}
+
+.card-alert a {
+  color: inherit;
+  font-weight: 500;
+}
+
+.card-alert a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
 /*=========================basic===========================*/
 
 .left {
@@ -2522,6 +2613,17 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+    .alert-area{
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    z-index: 9999;
+     }
+     .card .card-content {
+    padding: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+    }
     .left h4 {
     font-size: 25px;
     color: #FFF;
