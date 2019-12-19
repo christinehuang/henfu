@@ -2368,6 +2368,12 @@ footer {
     max-width: 400px;
 }
 
+footer .accordion img {
+    width: auto!important;
+    height: auto!important;
+    max-width: 400px;
+}
+
 .accordion li {
     border-bottom: 1px solid #C8C7C7;
     border-radius: 8px;
