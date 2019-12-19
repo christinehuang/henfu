@@ -2659,6 +2659,11 @@ footer .accordion img {
 }
 
 @media screen and (max-width: 800px) {
+    footer .accordion img {
+    width: auto!important;
+    height: auto!important;
+    max-width: 300px;
+}
     .alert-area{
     position: fixed;
     top: 30%;
@@ -3148,6 +3153,11 @@ footer .accordion img {
 }
 
 @media screen and (max-width: 320px) {
+    footer .accordion img {
+    width: auto!important;
+    height: auto!important;
+    max-width: 230px;
+}
     .step-txt li {
         font-size: 12px;
     }
