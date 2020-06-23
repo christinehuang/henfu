@@ -277,7 +277,7 @@ body {
     flex-direction: column;
     justify-content: space-start;
     width: 40%;
-    padding-top: 10%;
+    padding-top: 4%;
     padding-right: 3%;
     padding-bottom: 8%;
     padding-left: 6%;
@@ -324,10 +324,16 @@ body {
     transform: translate(0px, 0px);
 }
 
-.left h1 img {
+.left h1 .long-logo {
     width: 90%;
     height: auto;
     margin-top: 18px;
+}
+.left h1 .square-logo {
+    width: 100%;
+    height: auto;
+    margin-top: 18px;
+    max-width: 90px;
 }
 
 .left h1 {
@@ -338,7 +344,7 @@ body {
     display: inline-flex;
     flex-direction: column;
     font-size: 45px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     color: #FFF;
     letter-spacing: 4px;
     padding-top: 30px;
@@ -549,6 +555,8 @@ body {
 }
 
 .self p {
+    font-size: 16px!important;
+    border-left:none!important; 
     display: inline-block;
     width: 120px;
 }
@@ -1980,9 +1988,14 @@ main {
     box-shadow: 0 1.7em 5.5em -0.94em rgba(255, 168, 76, 0.5), 0 2em 3em 0.5em rgba(255, 168, 76, 0.2), 0 1.8em 2em -1.5em rgba(255, 168, 76, 0.3);
     opacity: 1;
 }
+.price-list li .price-btn.active p{
+    color: #FFF;
+    border-left: 1px #FFF dotted; 
+}
 
 .price-list li .price-btn:hover p {
     color: #FFF;
+    border-left: 1px #FFF dotted; 
 }
 
 .self input:focus~.price-list li:last-child .price-btn {
@@ -2001,8 +2014,17 @@ main {
     font-weight: 600;
     line-height: 60px;
     padding-top: 12px;
+    padding-right: 10px;
 }
-
+.price-btn p {
+    font-size: 13px;
+   padding-left: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   text-align: left;
+   letter-spacing: 1.3px;
+   border-left: 1px #ccc dotted; 
+}
 .price-btn:before {
     position: absolute;
     content: "NTD";
@@ -2080,7 +2102,6 @@ main {
 
 .price input:checked+label {
     color: #20a1e4;
-    border: 0px solid #abc;
     border-top: 2px solid #FFC300;
     border-bottom: 1px solid #fff;
     background-color: #FFF;
