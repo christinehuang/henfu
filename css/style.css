@@ -2852,7 +2852,7 @@ footer .accordion img {
     }
 
     .price-list li {
-        width: 48%;
+        width: 100%;
     }
 
     .price-list .price-self {
@@ -2890,8 +2890,8 @@ footer .accordion img {
     .price-list li .price-btn {
         align-items: center;
         min-height: 62px;
-        padding: 20px 30px;
-        margin-bottom: 10px;
+        padding: 10px 20px;
+        margin-bottom: 6px;
         background-color: #FFF;
         box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.12);
     }
@@ -2926,6 +2926,14 @@ footer .accordion img {
         padding-top: 8px;
         padding-left: 15px;
     }
+    .price-btn p {
+    font-size: 12px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    letter-spacing: .6px;
+}
 
     .price-btn:before {
         position: absolute;
@@ -2933,7 +2941,7 @@ footer .accordion img {
         font-size: 9px !important;
         line-height: unset;
         position: absolute;
-        top: 20px;
+        top: 10px;
         font-weight: 300;
     }
 
